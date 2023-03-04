@@ -7,42 +7,30 @@
     <title>V Carears</title>
 
     <style>
-/*       h1{
-        font-size: 40px;
-        font-family: roboto;
-        font-weight: normal;
-        color: rgb(50, 50, 50); 
-        text-align: center;
-      } */
 
       #ben{
         width: 100%;
-        hieght: 200px;
+        height: 360px;
         object-fit: cover;
       }
-/*       h2{
-        font-family:roboto;
-        font-size: 32px;
-        color: rgb(100, 100, 100);
-        text-align: center;
-        font-weight: normal;
-      }
-      p{
-        color: 80, 80, 80;
-       }
-      #container{
-        max-width: 720px;
-        margin: 0 auto;
-      } */
+
     </style>
   </head>
   <body>
+    {% include 'nav.html' %}
     <div class="container" id="container">
-      <h1 class="text-center mt-2 mb-4">{{company_name}} Career</h1>
       <img class="img-fluid" id="ben" src="https://v-carear-website.vikzenith.repl.co/static/ben.jpg" height="320" width="100%" alt="">
+      <h1 class="text-center mt-2 mb-4">{{company_name}} Career</h1>
+      
   
-      <h2 class="text-center mt-2 mb-4">About V</h2>
-      <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, placeat necessitatibus sed nemo nostrum quaerat eos? Aliquam quam, quis delectus facere praesentium tenetur fuga rem eveniet similique quo error ullam possimus temporibus modi, alias corrupti obcaecati maxime quaerat iure ipsa.</p>
+      <div class="row" style="margin-bottom: 16px;">
+        <div class="col-md-6">
+          <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, placeat necessitatibus sed nemo nostrum quaerat eos? Aliquam quam, quis delectus facere praesentium tenetur fuga rem eveniet similique quo error ullam possimus temporibus modi, alias corrupti obcaecati maxime quaerat iure ipsa. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit porro aspernatur omnis dolore molestias voluptatum qui iste ipsa architecto reprehenderit perspiciatis quo illo, vero aliquid labore quia, corrupti minus dolorum?</p>
+        </div>
+        <div class="col-md-6 d-none d-md-block">
+          <img src="/static/hand.jpg" style="height: 360px; border-radius: 8px; alt="">
+        </div>
+      </div>
   
       <h2 class="text-center mt-2 mb-4">Available Jobs</h2>
       
@@ -53,7 +41,7 @@
       </div>
       
       <div class="text-center">
-        <button class="btn btn-primary btn-lg">Contact us</button>
+        <button class="btn btn-primary btn-lg" href="mailto:akorvikkyy@gmail.com?subject=Making Enquiry about V- Career Jobs">Contact Us</button>
         <p class="mt-4">Copyright 2023, V</p>
       </div>
     </div>
